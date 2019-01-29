@@ -11,12 +11,12 @@ define(['N/file'], function(file) {
         var content = "Testing content goes in here";
         
         var fileObj = file.create({
-            name: 'outputFile.txt',
+            name: 'outputFile.txt', // Output file name
             fileType: file.Type.PLAINTEXT,
-            contents: content,
-            description: 'file description',
+            contents: content, // File content
+            description: 'file description', // File description
             encoding: file.Encoding.UTF8,
-            folder: 11042,
+            folder: 11042, // Folder internel ID
             isOnline: true
         });
         
